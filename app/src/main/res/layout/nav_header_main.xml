@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+android:orientation="vertical"
+
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_20sdp"
+        android:background="@color/red"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profileimg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            >
+            <TextView
+                android:id="@+id/txt_name"
+                android:text="Angelina Jacob"
+                style="@style/text_support"
+                android:layout_marginTop="0dp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/txt_emailid"
+                android:text="angelina.jb@mail.com"
+                style="@style/text_support"
+                android:layout_marginTop="3dp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/txt_phone_no"
+                android:text="+91 98765 43210"
+                style="@style/text_support"
+                android:layout_marginTop="3dp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/myteam"
+            style="@style/text_support"
+            android:layout_width="match_parent"
+            android:text="My Team"
+            android:drawableTint="@color/black"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="@dimen/_12sdp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_divider_color"
+            />
+        <TextView
+            android:id="@+id/profile"
+            style="@style/text_support"
+            android:layout_width="match_parent"
+            android:text="My Profile"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/user"
+            android:drawableTint="@color/black"
+            android:drawablePadding="@dimen/_12sdp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_divider_color"
+            />
+
+        <TextView
+
+            android:id="@+id/projects"
+            style="@style/text_support"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:drawableLeft="@drawable/layer1"
+            android:drawablePadding="@dimen/_12sdp"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:text="Projects"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/profile_divider_color"
+            />
+        <TextView
+
+            android:id="@+id/transactions"
+            style="@style/text_support"
+            android:layout_width="match_parent"
+            android:text="Transactions"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/transaction"
+            android:drawablePadding="@dimen/_12sdp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/profile_divider_color"
+            />
+        <TextView
+            android:id="@+id/sales"
+            style="@style/text_support"
+            android:layout_width="match_parent"
+            android:text="Sale History"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/sale_history"
+            android:drawablePadding="@dimen/_12sdp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_divider_color"
+            />
+
+
+        <TextView
+            android:id="@+id/wallet"
+            style="@style/text_support"
+            android:layout_width="match_parent"
+            android:text="Wallet"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/wallet1"
+            android:drawablePadding="@dimen/_12sdp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_divider_color"
+            />
+        <TextView
+            android:id="@+id/notifications"
+            style="@style/text_support"
+            android:layout_width="match_parent"
+            android:text="Notifications"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/black"
+            android:drawableLeft="@drawable/notification"
+            android:drawablePadding="@dimen/_12sdp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_divider_color"
+            />
+        <TextView
+            android:id="@+id/contact_us"
+            style="@style/text_support"
+            android:layout_width="match_parent"
+            android:text="@string/contact_us"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/black"
+            android:drawableLeft="@drawable/contactus"
+            android:drawablePadding="@dimen/_12sdp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_divider_color"
+            />
+        <TextView
+            android:id="@+id/help_support"
+            style="@style/text_support"
+            android:layout_width="match_parent"
+            android:text="@string/help_support"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/black"
+            android:drawableLeft="@drawable/help_icon"
+            android:drawablePadding="@dimen/_12sdp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_divider_color"
+            />
+
+
+    </LinearLayout>
+    </ScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_login_text_field"
+        />
+    <TextView
+        android:id="@+id/logout"
+        style="@style/text_support"
+        android:layout_width="match_parent"
+        android:text="@string/logout"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:drawableTint="@color/black"
+        android:drawableLeft="@drawable/logout"
+        android:drawablePadding="@dimen/_12sdp"
+        android:layout_marginTop="0dp"
+        />
+    </LinearLayout>
+    </LinearLayout>

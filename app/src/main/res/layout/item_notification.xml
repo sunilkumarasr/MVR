@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp"
+    android:layout_margin="10sp"
+    android:paddingHorizontal="@dimen/_25sdp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Security Update!"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        style="@style/text_support"/>
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="Today | 9:44 AM"
+        android:fontFamily="@font/robotoregular"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        />
+    <TextView
+        android:id="@+id/txtBody"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/robotoregular"
+        android:layout_marginStart="@dimen/_10sdp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/profile_divider_color"
+        />
+</LinearLayout>
