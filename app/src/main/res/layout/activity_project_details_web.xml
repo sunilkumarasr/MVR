@@ -30,8 +30,18 @@
         </LinearLayout>
 
         <WebView
+            android:visibility="gone"
             android:id="@+id/webview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:id="@+id/zoomageImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo"/>
+
+
 
 </LinearLayout>

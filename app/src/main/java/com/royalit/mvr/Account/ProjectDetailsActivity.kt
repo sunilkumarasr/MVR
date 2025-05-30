@@ -59,6 +59,7 @@ class ProjectDetailsActivity : AppCompatActivity() {
     private var refid: Long = -1
 
     var brochureUrl: String = ""
+    var imageUrl: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -82,6 +83,7 @@ class ProjectDetailsActivity : AppCompatActivity() {
         binding.txtViewMap.setOnClickListener {
             val intent = Intent(this@ProjectDetailsActivity, ProjectDetailsWebActivity::class.java)
             intent.putExtra("pid", pid)
+            intent.putExtra("imageUrl", imageUrl)
             startActivity(intent)
         }
 
@@ -183,6 +185,7 @@ class ProjectDetailsActivity : AppCompatActivity() {
             .load(RetrofitClient.Image_Path+list.plotImage)  // Image URL
             .into(binding.imgroot)
 
+        imageUrl = RetrofitClient.Image_Path+list.plotImage
 
         //highlight
         if (!list.highlight.isNullOrEmpty()) {

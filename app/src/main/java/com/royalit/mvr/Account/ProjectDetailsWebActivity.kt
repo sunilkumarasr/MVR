@@ -6,13 +6,13 @@ import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.royalit.mvr.Retrofit.RetrofitClient
 import com.royalit.mvr.databinding.ActivityProjectDetailsWebBinding
 
 class ProjectDetailsWebActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityProjectDetailsWebBinding
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,15 +21,21 @@ class ProjectDetailsWebActivity : AppCompatActivity() {
         toolbarSetup()
 
         val pid = intent.getStringExtra("pid")
+        val imageUrl = intent.getStringExtra("imageUrl")
 
-        binding.webview.settings.javaScriptEnabled = true
-        binding.webview.webViewClient = object : WebViewClient() {
-            override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
-                view?.loadUrl(request?.url.toString())
-                return true
-            }
-        }
-        binding.webview.loadUrl(RetrofitClient.plot_details +pid)
+        Glide.with(this)  // "this" refers to the context (Activity or Fragment)
+            .load(imageUrl)  // Image URL
+            .into(binding.zoomageImage)
+
+
+//        binding.webview.settings.javaScriptEnabled = true
+//        binding.webview.webViewClient = object : WebViewClient() {
+//            override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
+//                view?.loadUrl(request?.url.toString())
+//                return true
+//            }
+//        }
+//        binding.webview.loadUrl(RetrofitClient.plot_details +pid)
 
     }
 
