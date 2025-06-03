@@ -27,7 +27,6 @@ class ProjectDetailsWebActivity : AppCompatActivity() {
             .load(imageUrl)  // Image URL
             .into(binding.zoomageImage)
 
-
 //        binding.webview.settings.javaScriptEnabled = true
 //        binding.webview.webViewClient = object : WebViewClient() {
 //            override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
