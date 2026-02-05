@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MVR"
+        tools:targetApi="31">
+        <activity
+            android:name=".Account.ProjectDetailsWebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.ProjectDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.TermsAndConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SaleHistoryDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.OtpScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.FaqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SalesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransactionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.MyTeamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.EditprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.MyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.CreateNewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".Config.DownloadReceiver"
+            android:enabled="true"
+            android:exported="false"> <!-- This makes it private to the app -->
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+
+
+    </application>
+
+</manifest>
